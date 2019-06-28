@@ -12,6 +12,7 @@ _Enter your age and average life expectancy for your demographic and the applica
 
 * _Download or clone repository_
 * _run npm install in your console at the root folder_
+* _run npm run build in your console at the root folder_
 * _open in your favorite browser_
 * _follow on screen instructions_
 

@@ -1,5 +1,3 @@
-// was having issue trying to call a prototype within the class
-
 export class Mercury {
 
   age(earthAge) {

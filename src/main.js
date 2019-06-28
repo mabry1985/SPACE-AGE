@@ -7,7 +7,7 @@ import { Mercury, Venus, Mars, Jupiter } from '../src/space-age-calculator.js';
 $(document).ready(function () {
   const ageInput = parseInt($('.age').val());
   $('.mars').click(function () {
-    const mars = new Mars;
-    ('.output').prepend(`You are ${mars.age(ageInput)} on Mars.`);
+    const marsOutput = new Mars;
+    ('.output').html(`<li> You are ${marsOutput.age(ageInput)} on Mars.</li>`);
   });
 });
