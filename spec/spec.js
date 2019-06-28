@@ -22,10 +22,28 @@ describe('Earth age to age on other planets', function () {
   });
 });
 
+describe('Life expectancy', function () {
+  it('should return years remaining on Mercury rounded to the nearest whole number',
+  function (age, lifeExpectancy) {
+    let mercury = new Mercury;
+    expect(mercury.yearsLeft(34, 77)).toEqual(43);
+  });
 
-describe('Life expectancy', function (){
-  it('should return your life')
+  it('should return years remaining on Venus rounded to the nearest whole number',
+  function (age, lifeExpectancy) {
+    let venus = new Venus;
+    expect(venus.yearsLeft(34, 77)).toEqual(43);
+  });
 
+  it('should return years remaining on Mars rounded to the nearest whole number',
+  function (age, lifeExpectancy) {
+    let mars = new Mars;
+    expect(mars.yearsLeft(34, 77)).toEqual(43);
+  });
 
-
-})
+  it('should return years remaining on Jupiter rounded to the nearest whole number',
+  function (age, lifeExpectancy) {
+    let jupiter = new Jupiter;
+    expect(jupiter.yearsLeft(34, 77)).toEqual(43);
+  });
+});
