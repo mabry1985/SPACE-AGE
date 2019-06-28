@@ -1,25 +1,17 @@
-import { Character, randomMonster, pushFightArr, newArr, turnFinder } from '../src/game.js';
-
-describe('Classes', function () {
-  it('should return an object with inputted name', function () {
-    expect((new Character('Thaddeus')).name).toBe('Thaddeus');
+describe('Earth age to age on other planets', function () {
+  it('should return the inputted age * .24', function () {
+    expect(Mercury.age(34)).toEqual(8.16);
   });
-});
 
-describe('Monsters', function () {
-  it('should return one of the monsters from array', function () {
-    expect(randomMonster()).toEqual(jasmine.any(Object));
+  it('should return the inputted age * .62', function () {
+    expect(Venus.age(34)).toEqual(21.08);
   });
-});
 
-describe('Vs Array', function () {
-  it('should show array of character and monster', function () {
-    expect(pushFightArr('monster', 'character')).toEqual(jasmine.any(Object));
+  it('should return the inputted age * 1.88', function () {
+    expect(Mars.age(34)).toEqual(63.92);
   });
-});
 
-describe('Active Turn', function () {
-  it('should return the character with the turn property of true', function () {
-    expect(turnFinder(newArr)).toEqual('Bob');
+  it('should return the inputted age * 11.86', function () {
+    expect(Jupiter.age(34)).toEqual(403.24);
   });
 });
