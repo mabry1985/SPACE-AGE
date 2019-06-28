@@ -24,26 +24,51 @@ describe('Earth age to age on other planets', function () {
 
 describe('Life expectancy', function () {
   it('should return years remaining on Mercury rounded to the nearest whole number',
-  function (age, lifeExpectancy) {
+  function () {
     let mercury1 = new Mercury;
     expect(mercury1.yearsLeft(34, 77)).toEqual(10);
   });
 
   it('should return years remaining on Venus rounded to the nearest whole number',
-  function (age, lifeExpectancy) {
+  function () {
     let venus1 = new Venus;
-    expect(venus1.yearsLeft(34, 77)).toEqual(43);
+    expect(venus1.yearsLeft(34, 77)).toEqual(27);
   });
 
   it('should return years remaining on Mars rounded to the nearest whole number',
-  function (age, lifeExpectancy) {
+  function () {
     let mars1 = new Mars;
-    expect(mars1.yearsLeft(34, 77)).toEqual(43);
+    expect(mars1.yearsLeft(34, 77)).toEqual(81);
   });
 
   it('should return years remaining on Jupiter rounded to the nearest whole number',
-  function (age, lifeExpectancy) {
+  function () {
     let jupiter1 = new Jupiter;
-    expect(jupiter1.yearsLeft(34, 77)).toEqual(43);
+    expect(jupiter1.yearsLeft(34, 77)).toEqual(510);
   });
+
+  it('should return how many years pass the average life expectancy you have lived',
+  function () {
+    let mercury1 = new Mercury;
+    expect(mercury1.yearsLeft(95, 77)).toEqual(5);
+  });
+
+  it('should return how many years pass the average life expectancy you have lived',
+  function () {
+    let venus1 = new Venus;
+    expect(venus1.yearsLeft(95, 77)).toEqual(5);
+  });
+
+  it('should return how many years pass the average life expectancy you have lived',
+  function () {
+    let mercury1 = new Mercury;
+    expect(mercury1.yearsLeft(95, 77)).toEqual(5);
+  });
+
+  it('should return how many years pass the average life expectancy you have lived',
+  function () {
+    let mercury1 = new Mercury;
+    expect(mercury1.yearsLeft(95, 77)).toEqual(5);
+  });
+
 });
