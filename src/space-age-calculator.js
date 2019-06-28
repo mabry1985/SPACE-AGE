@@ -8,9 +8,9 @@ export class Mercury {
   }
 
   yearsLeft(earthAge, lifeExpectancy) {
-    let mercuryExpectancy = Math.round(lifeExpectancy * .24);
-    let mercuryAge = Math.round(earthAge * .24);
-    let yearsLeftMercury = mercuryExpectancy - mercuryAge;
+    const mercuryExpectancy = Math.round(lifeExpectancy * .24);
+    const mercuryAge = Math.round(earthAge * .24);
+    const yearsLeftMercury = mercuryExpectancy - mercuryAge;
     if (mercuryAge > mercuryExpectancy) {
       return Math.abs(yearsLeftMercury);
     } else {
@@ -28,10 +28,14 @@ export class Venus {
   }
 
   yearsLeft(earthAge, lifeExpectancy) {
-    let venusExpectancy = Math.round(lifeExpectancy * .62);
-    let venusAge = Math.round(earthAge * .62);
-    let yearsLeftVenus = venusExpectancy - venusAge;
-    return yearsLeftVenus;
+    const venusExpectancy = Math.round(lifeExpectancy * .62);
+    const venusAge = Math.round(earthAge * .62);
+    const yearsLeftVenus = venusExpectancy - venusAge;
+    if (venusAge > venusExpectancy) {
+      return Math.abs(yearsLeftVenus);
+    } else {
+      return yearsLeftVenus;
+    }
   }
 
 };
@@ -44,10 +48,14 @@ export class Mars {
   }
 
   yearsLeft(earthAge, lifeExpectancy) {
-    let marsExpectancy = Math.round(lifeExpectancy * 1.88);
-    let marsAge = Math.round(earthAge * 1.88);
-    let yearsLeftMars = marsExpectancy - marsAge;
-    return yearsLeftMars;
+    const marsExpectancy = Math.round(lifeExpectancy * 1.88);
+    const marsAge = Math.round(earthAge * 1.88);
+    const yearsLeftMars = marsExpectancy - marsAge;
+    if (marsAge > marsExpectancy) {
+      return Math.abs(yearsLeftMars);
+    } else {
+      return yearsLeftMars;
+    }
   }
 
 };
@@ -60,10 +68,14 @@ export class Jupiter {
   }
 
   yearsLeft(earthAge, lifeExpectancy) {
-    let jupiterExpectancy = Math.round(lifeExpectancy * 11.86);
-    let jupiterAge = Math.round(earthAge * 11.86);
-    let yearsLeftJupiter = jupiterExpectancy - jupiterAge;
-    return yearsLeftJupiter;
+    const jupiterExpectancy = Math.round(lifeExpectancy * 11.86);
+    const jupiterAge = Math.round(earthAge * 11.86);
+    const yearsLeftJupiter = jupiterExpectancy - jupiterAge;
+    if (jupiterAge > jupiterExpectancy) {
+      return Math.abs(yearsLeftJupiter);
+    } else {
+      return yearsLeftJupiter;
+    }
   }
 
 };
